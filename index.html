@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHelp</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<style>
+    *{
+        scroll-behavior: smooth;
+        font-family: Rubik,sans-serif;
+    }
+    nav{
+        box-shadow: rgba(157, 157, 157, 0.2) 0px 4px 10px;
+    }
+    .icon{
+
+        animation-duration: 3s;
+        animation-name: moving;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes moving{
+        50%{
+            transform: translateY(2%);
+        }
+
+    }
+</style>
+<body>
+    <div class="fixed z-[9999] w-full transition-all duration-300">
+    <nav class="flex relative transition-all duration-300 backdrop-blur-lg py-5 justify-between">
+            <img src="codehelp.svg" alt="" class="ml-6">
+    
+            <ul class="items-center gap-x-6 md:flex">
+                <li class="text-lg "><a href="">About Us</a></li>
+                <li class="text-lg "><a href="">Courses</a> </li>
+                <li class="text-lg "><a href="">Games</a> </li>
+                <li class="text-lg "><a href="">Contact</a> </li>
+            </ul>
+            <div class="items-center gap-x-3 md:flex mr-8">
+                <button class="border rounded-md font-['rubik'] px-10 py-[0.5rem] cursor-pointer border-blue-700 place-items-center">Dashboard</button>
+                <button class=" border text-white text-lg bg-[#6674cc] px-10 py-[0.5rem] cursor-pointer place-items-center rounded-md flex">Login
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ml-2 text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
+                </button>
+                <svg stroke="currentColor" fill="#6674CC" stroke-width="0" viewBox="0 0 24 24" font-size="38" cursor="pointer" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M9.37 5.51A7.35 7.35 0 009.1 7.5c0 4.08 3.32 7.4 7.4 7.4.68 0 1.35-.09 1.99-.27A7.014 7.014 0 0112 19c-3.86 0-7-3.14-7-7 0-2.93 1.81-5.45 4.37-6.49zM12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"></path></svg>
+            </div>
+        </nav>
+        <!-- section first -->
+        <section class="flex relative w-11/12 max-w-[100%] justify-between mx-auto h-[100%]">
+            <!-- left section -->
+            <div class=" flex flex-col pt-[12rem] space-y-10">
+                <h1 class="text-black translate-x-[90px] scale-150  font-bold text-4xl"><span class="text-[#6674cc] font-bold text-4xl">Learn</span>  With <span class="role text-black translate-x-[90px] scale-150  font-bold text-4xl"></span></h1>
+                <p class="text-2xl translate-x-[90px] scale-150  text-gray-500">The Ultimate Guide To Ace <br> SDE Interviews.</p>
+                <div class="flex gap-x-4">
+                    <button class=" border text-white text-lg bg-[#6674cc] xl:px-9 px-5 xl:py-4 py-2 cursor-pointer place-items-center rounded-md flex">View Courses</button>
+                    <button class="border rounded-md font-['rubik'] xl:text-lg text-sm xl:px-9 px-5 xl:py-4 py-2 cursor-pointer border-blue-700 place-items-center">Watch Now</button>
+                </div>
+
+            </div>
+            <!-- right-section  -->
+            <div class="relative pt-[7.5rem] z-10">
+                <img src="cartoon.svg" alt="">
+                <div class="absolute top-12 right-52 icon ">
+                    <img src="7.png" alt="">
+                    <img src="8.png" alt="" class="relative right-[8rem] top-[7.5rem] ">
+                    <img src="9.png" alt="" class="relative -right-[7.5rem] bottom-20">
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script>
+    var typeData = new Typed(".role", {
+      strings: [
+        "Nishkarsh",
+        "Verma",
+      ],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+    });
+  </script>
+    
+</body>
+</html>
